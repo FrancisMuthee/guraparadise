@@ -1,0 +1,312 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Jost', sans-serif;
+  font-size: 20px;
+}
+body{
+  background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(GuraPhotos/river-11.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  overflow-x: hidden;
+}
+nav{
+  background: transparent;
+  height: 90px;
+  width: 100%;
+}
+label.logo{
+  color: #fff;
+  font-size: 20px;
+  line-height: 80px;
+  padding: 0 20px;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 17px;
+  padding: 7px 13px;
+  text-transform: uppercase;
+}
+nav ul li a:hover{
+  text-decoration: underline;
+  color: #fff;
+}
+.fa-bars{
+  font-size: 30px;
+  color: #fff;
+}
+.checkbtn{
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  display: none;
+}
+#check{
+  display: none;
+}
+
+
+.heading-1{
+  text-align: center;
+  /* margin-left: 7rem; */
+  margin-top: 6rem;
+  color: #fff;
+  
+}
+.heading-1 h1{
+  font-size: 40px;
+  margin-top: 6rem;
+  margin-bottom: 2rem;
+}
+.heading-1 h5{
+  font-size: 20px;
+}
+.buttons{
+  text-align: center;
+  margin-top: 13rem;
+}
+.buttons a{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 25px;
+  border: 1px solid;
+  padding: 1rem;
+}
+.vertical-shake{
+  animation: vertical-shaking 1s infinite;
+}
+@keyframes vertical-shaking {
+  0% { transform: translateY(0) }
+  25% { transform: translateY(5px) }
+  50% { transform: translateY(-5px) }
+  75% { transform: translateY(5px) }
+  100% { transform: translateY(0) }
+}
+
+@media (max-width: 480px){
+  html, body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+  }
+
+  label .logo{
+    font-size: 8px;
+    /* color: blueviolet; */
+  }
+  nav ul li a{
+    font-size: 14px;
+  }
+  .checkbtn{
+    display: block;
+  }
+  .fa-bars{
+    font-size: 20px;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px;
+    margin-left: -0.3rem;
+    line-height: 24px;
+  }
+  nav ul li a{
+    font-size: 15px;
+    color: #000;
+  }
+  nav ul li a:hover{
+    text-decoration: underline;
+    color: #000;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+  .buttons{
+    margin-top: 15rem
+  }
+  .buttons a{
+    padding: 0.5rem;
+    font-size: 18px;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px){
+  html, body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+  }
+  label .logo{
+    font-size: 8px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px;
+    margin-left: -0.3rem;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 15px;
+    color: #000;
+  }
+  nav ul li a:hover{
+    text-decoration: underline;
+    color: #000;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+  .fa-bars{
+    font-size: 20px;
+  }
+  .buttons{
+    margin-top: 6rem;
+  }
+  .buttons a{
+    padding: 0.5rem;
+    font-size: 18px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px){
+  html, body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+  }
+  label .logo{
+    font-size: 8px;
+    /* color: blueviolet; */
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+  .checkbtn{
+    display: block;
+  }
+  .fa-bars{
+    font-size: 20px;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px;
+    margin-left: -0.3rem;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 15px;
+    color: #000;
+  }
+  nav ul li a:hover{
+    text-decoration: underline;
+    color: #000;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+  .buttons{
+    margin-top: 6rem;
+  }
+  .buttons a{
+    padding: 0.5rem;
+    font-size: 18px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px){
+  html, body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+  }
+  label .logo{
+    font-size: 8px;
+    /* color: blueviolet; */
+  }
+  nav ul li a{
+    font-size: 11px;
+  }
+  .buttons{
+    margin-top: 6rem;
+  }
+  .buttons a{
+    padding: 0.5rem;
+    font-size: 18px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1919px){
+  html, body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+  }
+  nav ul li a{
+    font-size: 14px;
+  }
+  .heading-1 h1{
+    margin-top: 10rem;
+    font-size: 60px;
+  }
+  
+}
+
+
+
+
+
